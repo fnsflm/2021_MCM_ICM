@@ -1,0 +1,91 @@
+动态社区: 每一年(向前找一个时间段)划分社区
+
+第五问: What artists represent revolutionaries (influencers of major change) in your network?
+不同社区里挑出第一问那些参数大的(聚合系数/katz/特征路径长度)artist, 比较各个社区的距离-时间曲线和这些音乐家的曲线是否趋势上相近
+(三个参数指标里怎么挑? -> 按照排名三个都在5%)
+(如何衡量曲线趋势相近?)
+
+编程输出: 给出各个社区影响者的名字/id(容易), 各个社区各年的距离, 影响者的各年举例(容易), 曲线图, 比较曲线相近
+编程简化: 100年每一年去划分社区不现实, 时间复杂度太高, 直接求最后固定社区的, 按照影响者的平均值来算
+
+第六问: 
+Analyze the influence processes of musical evolution that occurred over time in one genre
+(一个社区里有不同流派, 一个流派被不同社区影响)
+一个流派的距离曲线被不同社区距离曲线的影响过程即musical evolution
+[验证]影响程度? -> 社区的平均距离曲线和流派的距离曲线趋势相近
+不同社区的影响按照该流派人数加权求距离, 得出的时间-平均距离曲线
+eg:
+社区  x流派  社区的平均距离
+A     10人     1.3
+B     15人     0.8
+C     12人     2.1
+加权距离(10*1.3+15*0.8+12*2.1)/(10+15+12)
+
+编程输出: 上边各个社区的距离和流派距离拼一下, 再求个曲线相近程度
+
+Can your team identify indicators that reveal the dynamic influencers, and explain how the genre(s) or artist(s) changed over time?
+动态影响者? -> 动态社区取三指标大的
+如何影响: 动态影响者 --影响-> 社区 --影响--> 流派
+后边的explain how the genre(s) or artist(s) changed over time 属于文字, 说清楚就行
+
+编程输出: 100 年 * 10 社区 * 3-5位(?)影响者, 论文放得下?
+
+
+第七问:
+How does your work express information about cultural influence of music intime or circumstances?
+看曲线拐点分析
+Alternatively, how can the effects of social, political or technological changes (such as the internet) be identified within the network
+看上去是可以查阅外部资料的
+语文建模 + p拐点
+
+
+5(2)
+[38, 41, 25, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]中选
+社区0: 
+334
+995
+1525
+3012
+4078
+4758
+4491
+社区1:
+30
+515
+622
+658
+677
+695
+698
+1670
+2136
+2194
+2354
+2477
+2709
+3130
+3172
+3286
+3421
+3635
+3896
+3944
+4527
+4656
+4841
+4842
+5110
+5112
+5176
+社区3:
+646
+1325
+1408
+2071
+2082
+2495
+2681
+3852
+4266
+4388
+4948
