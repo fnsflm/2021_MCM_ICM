@@ -2,6 +2,8 @@
 
 >   代码全部为后期整理, 代码涉及路径的部分需要更改
 
+论文  https://github.com/fnsflm/2021_MCM_ICM/blob/master/2108125.pdf
+
 ## 赛题( 所有)
 
 `2021_MCM-ICM_Problems` 文件夹, c题数据已解压, 数据未进行任何修改
