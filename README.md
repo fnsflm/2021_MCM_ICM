@@ -16,7 +16,9 @@
 
 `first/network_community`社区划分算法的代码和结果
 
+三个参数计算[代码展示](https://nbviewer.jupyter.org/github/fnsflm/2021_MCM_ICM/blob/master/first/network_parameter/network_norm.ipynb):
 
+<script src="https://gist.github.com/fnsflm/3c2cc29dc714f70b7016a3502bea91ae.js"></script>
 
 
 
